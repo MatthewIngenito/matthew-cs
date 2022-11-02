@@ -12,7 +12,12 @@
   <img width="150" src="Buxley.jpg" alt="Buxley the bulldog" title="Buxley the bulldog" />
   <h1>Hello World</h1>
   <h2>How are you</h2>
-  <p>I'm doing great</p>
+  <form action="#" onsubmit="return submitAnswer(this.answer);">
+    <input id="answer" />
+    <input type="submit" value="sumbit" />
+  </form>
+  <a href="#" onclick="clearStorage(); return false;">reset answers</a>
+  <p id="answerlist"> </p>
   <h2>What's the weather like</h2>
   <p>It's a little chilly, but nice</p>
   <h3>Goodbye</h3>
